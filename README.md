@@ -2,4 +2,6 @@
 An attempt to analyze the internet game "Wordle" in terms of mathematics and statistics.
 
 
-# homework: error tests, json for both datasets :)
+# solve TODO
+# test for entire path (6 examples)
+

@@ -8,11 +8,9 @@ def check_char_positions(input_word: str, answer: str):
     for index, letter in enumerate(input_word_split):
         letter_position_in_answer = answer.find(letter)
         if letter_position_in_answer == -1:
-            letter_positions_info[letter] = {'present': False, 'position': index, "valid_position": False}
+            letter_positions_info[letter] = {'present': False, "checked_positions": {index: False}}
         elif letter_position_in_answer == index:
-            letter_positions_info[letter] = {'present': True, 'position': index, "valid_position": True}
+            letter_positions_info[letter] = {'present': True, "checked_positions": {index: True}}
         else:
-            letter_positions_info[letter] = {'present': True, 'position': index, "valid_position": False}
+            letter_positions_info[letter] = {'present': True, "checked_positions": {index: False}}
     return letter_positions_info
-
-

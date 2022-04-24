@@ -1,4 +1,6 @@
-possible_answers = ["aahed", "aalii", "aargh", "aarti", "abaca", "abaci", "abacs", "abaft", "abaka", "abamp",
+[
+  {
+    "words": ["aahed", "aalii", "aargh", "aarti", "abaca", "abaci", "abacs", "abaft", "abaka", "abamp",
                           "aband", "abash", "abask", "abaya", "abbas", "abbed", "abbes", "abcee", "abeam", "abear",
                           "abele", "abers", "abets", "abies", "abler", "ables", "ablet", "ablow", "abmho", "abohm",
                           "aboil", "aboma", "aboon", "abord", "abore", "abram", "abray", "abrim", "abrin", "abris",
@@ -1064,4 +1066,4 @@ possible_answers = ["aahed", "aalii", "aargh", "aarti", "abaca", "abaci", "abacs
                           "zoist", "zombi", "zonae", "zonda", "zoned", "zoner", "zones", "zonks", "zooea", "zooey",
                           "zooid", "zooks", "zooms", "zoons", "zooty", "zoppa", "zoppo", "zoril", "zoris", "zorro",
                           "zouks", "zowee", "zowie", "zulus", "zupan", "zupas", "zuppa", "zurfs", "zuzim", "zygal",
-                          "zygon", "zymes", "zymic"]
+                          "zygon", "zymes", "zymic"]}]
