@@ -61,3 +61,27 @@ class TestWordleGame(TestCase):
             "v": {'present': True, "checked_positions": {0: False, 3: True}}
         }
         self.assertEqual(expected, wordle_game.all_combined_results)
+
+    def test_check_guess_validity(self):
+        answer = "water"
+        wordle_game = WordleGame(answer)
+        expected = "Word is not valid"
+        self.assertEqual(expected, wordle_game.check_word("aaaaa"))
+
+    def test_check_attempts_limit(self):
+        answer = "olive"
+        wordle_game = WordleGame(answer)
+        wordle_game.check_word("water")
+        wordle_game.check_word("copes")
+        wordle_game.check_word("heros")
+        wordle_game.check_word("guild")
+        wordle_game.check_word("veils")
+        wordle_game.check_word("oldie")
+        expected = "Attempt limit is 6, is passed!"
+        self.assertEqual(expected, wordle_game.check_word("wared"))
+
+    def test_check_victory(self):
+        answer = "water"
+        wordle_game = WordleGame(answer)
+        expected = "Victory! The answer is water!"
+        self.assertEqual(expected, wordle_game.check_word("water"))
